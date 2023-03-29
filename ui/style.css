@@ -1,0 +1,158 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the background color and font */
+body {
+  background-color: #1e1e1e;
+  font-family: 'Courier New', monospace;
+  color: #0bf;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Style the chat container */
+.chat-container {
+  width: 80%;
+  max-width: 800px;
+  /* height: calc(100% - 80px); */
+  background-color: #1e1e1e;
+  border: 2px solid #0bf;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+/* Style the chat messages container */
+.chat-messages {
+  flex-grow: 1;
+  padding: 15px;
+  height: 500px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+/* Style individual messages */
+.message {
+  margin-bottom: 10px;
+}
+
+/* Style the user's emoji and message text */
+.message .emoji,
+.message .text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.message .emoji {
+  margin-right: 5px;
+}
+
+/* Style the chat input container */
+.chat-input-container {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #0bf;
+  align-items: center;
+  padding: 10px;
+}
+
+.chat-form {
+  display: flex;
+  width: 100%;
+}
+
+.chat-input-prompt {
+  color: #00ff41;
+  margin-right: 5px;
+  line-height: 28px;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #00ff41;
+}
+
+/* Style the chat input field */
+.chat-input {
+  flex-grow: 1;
+  padding: 2px;
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  color: #33ccff;
+  background-color: #1e1e1e;
+  border: none;
+  outline: none;
+}
+
+/* Style the Send button */
+.send-button {
+  background-color: #1e1e1e;
+  border: 1px solid #0bf;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  color: #0bf;
+}
+
+.send-button:hover {
+  background-color: #0bf;
+  color: #1e1e1e;
+}
+
+/* Dark mode styles - not implemented yet */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #0bf;
+}
+
+.dark-mode .chat-container {
+  border-color: #0bf;
+}
+
+.dark-mode .chat-input-container {
+  border-top-color: #0bf;
+}
+
+.dark-mode .send-button {
+  background-color: #0bf;
+  color: #1e1e1e;
+}
+
+/* Add custom scrollbars for chat messages container */
+.chat-messages::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background-color: #1e1e1e;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background-color: #0bf;
+  border-radius: 5px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+  background-color: #09a;
+}
+
+.channel-display {
+  font-family: 'Courier New', monospace;
+  font-size: 1.2rem;
+  color: #00ff41;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #33ccff;
+}

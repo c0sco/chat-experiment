@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tw::chat</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="chat-container" class="chat-container">
+    <div class="channel-display"></div>
+    <div class="chat-messages"></div>
+    <div class="chat-input-container">
+      <form id="chat-form" class="chat-form">
+        <span class="chat-input-prompt">&gt;</span>
+        <input type="text" id="chat-input" class="chat-input" placeholder="Type your message..." autocomplete="off">
+        <button class="send-button" type="submit">&#8629;</button>
+      </form>
+    </div>
+  </div>
+  <!-- <button id="dark-mode-toggle">
+    <i class="fas fa-moon"></i>
+  </button>
+-->
+  <script src="script.js"></script>
+</body>
+
+</html>
